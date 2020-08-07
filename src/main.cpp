@@ -78,6 +78,7 @@ void loop() {
 
 void connectToWifi()
 {
+    WiFi.mode(WIFI_STA);
     Serial.println("Connecting to Wi-Fi...");
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 }
